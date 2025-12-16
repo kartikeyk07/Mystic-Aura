@@ -135,7 +135,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Email</h3>
                     <a href="mailto:hello@mysticaura.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      hello@mysticaura.com
+                      mysticauradecor@gmail.com
                     </a>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Phone</h3>
                     <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                      +1 (234) 567-890
+                      +91 8329686504
                     </a>
                   </div>
                 </div>
@@ -169,18 +169,14 @@ export default function Contact() {
                 <h3 className="font-medium text-foreground mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
-                    href="https://www.instagram.com/mysticauradecor/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#"
                     className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                     aria-label="Instagram"
                   >
                     <Instagram size={20} />
                   </a>
                   <a
-                    href="https://www.facebook.com/people/Mystic-Aura/61561925900843/?ref=_xav_ig_profile_page_web#"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#"
                     className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                     aria-label="Facebook"
                   >
