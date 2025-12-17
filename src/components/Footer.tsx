@@ -26,7 +26,7 @@ export default function Footer() {
               {[
                 { label: "Our Journey", path: "/journey" },
                 { label: "Gallery", path: "/gallery" },
-                { label: "Contact Us", path: "/contact" },
+                // { label: "Contact Us", path: "/contact" },
               ].map((link) => (
                 <li key={link.path}>
                   <Link
@@ -45,6 +45,9 @@ export default function Footer() {
             <h4 className="font-serif text-lg font-medium text-foreground mb-4">
               Connect
             </h4>
+            <h5 className="font-serif text-lg font-medium text-foreground mb-4">
+              Have a question or want to place a custom order? We'd love to hear from you.
+            </h5>
             <div className="space-y-3 text-sm text-muted-foreground">
               <a
                 href="mailto:hello@mysticaura.com"

@@ -52,10 +52,10 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div className="opacity-0 animate-fade-in" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
-              <h2 className="font-serif text-2xl font-medium text-foreground mb-6">
+              {/* <h2 className="font-serif text-2xl font-medium text-foreground mb-6">
                 Send us a Message
-              </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              </h2> */}
+              {/* <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
@@ -119,15 +119,15 @@ export default function Contact() {
                   {isSubmitting ? "Sending..." : "Send Message"}
                   <Send className="w-4 h-4 ml-2" />
                 </Button>
-              </form>
+              </form> */}
             </div>
 
             {/* Contact Info */}
-            <div className="opacity-0 animate-fade-in" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
+            <div className="opacity-0 animate-fade-in flex flex-col items-center md:items-start text-center md:text-left" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
               <h2 className="font-serif text-2xl font-medium text-foreground mb-6">
                 Contact Information
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-8 w-full max-w-md mx-auto md:mx-0">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-primary" />
@@ -157,49 +157,49 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Studio</h3>
                     <p className="text-muted-foreground">
-                      123 Artisan Lane<br />
-                      Creative District, CA 90210
+                      Nagpur<br />
+                      Visakhapatnam
                     </p>
                   </div>
                 </div>
-              </div>
 
-              {/* Social Links */}
-              <div className="mt-10">
-                <h3 className="font-medium text-foreground mb-4">Follow Us</h3>
-                <div className="flex gap-4">
-                  <a
-                    href="#"
-                    className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                    aria-label="Instagram"
-                  >
-                    <Instagram size={20} />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                    aria-label="Facebook"
-                  >
-                    <Facebook size={20} />
-                  </a>
+                {/* Business Hours */}
+                <div className="p-6 rounded-2xl bg-card border border-border">
+                  <h3 className="font-serif text-lg font-medium text-foreground mb-4">Business Hours</h3>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Monday - Friday</span>
+                      <span className="text-foreground">9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Saturday</span>
+                      <span className="text-foreground">10:00 AM - 4:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Sunday</span>
+                      <span className="text-foreground">Closed</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              {/* Business Hours */}
-              <div className="mt-10 p-6 rounded-2xl bg-card border border-border">
-                <h3 className="font-serif text-lg font-medium text-foreground mb-4">Business Hours</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Monday - Friday</span>
-                    <span className="text-foreground">9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Saturday</span>
-                    <span className="text-foreground">10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Sunday</span>
-                    <span className="text-foreground">Closed</span>
+                {/* Social Links */}
+                <div>
+                  <h3 className="font-medium text-foreground mb-4">Follow Us</h3>
+                  <div className="flex gap-4">
+                    <a
+                      href="#"
+                      className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                      aria-label="Instagram"
+                    >
+                      <Instagram size={20} />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                      aria-label="Facebook"
+                    >
+                      <Facebook size={20} />
+                    </a>
                   </div>
                 </div>
               </div>
